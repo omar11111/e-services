@@ -1,0 +1,93 @@
+
+
+/*card*/
+        .maincard{margin: auto; }
+        .card{
+            position: relative;
+            height: 370px;
+            transition: 0.3s ease-out;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
+            margin:20px 10px;
+            border: 1px  solid #081832;
+                    
+        }
+
+        .card .imgbox{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        .card .imgbox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: 0.5s;
+        }
+
+
+          
+        .card .content{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height:25%;
+            padding: 12px;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            background: #fff;
+            color: #081832;
+            transition: all 0.5s cubic-bezier(0.48, -0.28, 0.41, 1.4);
+            box-sizing: border-box;
+            overflow: hidden;
+            border: 1px  solid #081832;
+            border-bottom: none;
+            border-radius:50px 50px 0px 0px  ;
+
+        }
+
+        .card .content p{
+            margin: 10px 0 0;
+            padding: 1em 1em;
+            transform: translateY(2em);
+            line-height: 1.3em;
+            transition: 0.3s;
+            
+            opacity: 0;
+
+        }
+
+        .card .content a{
+            opacity: 1;
+            background-color: #081832;
+            color: #fff;
+        }
+
+        .card .content a:hover{
+            background-color: #fff;
+            color: #081832;
+            border: 2px solid #081832;
+
+        }
+
+        .card:hover .content{
+            width: 100%;
+            height: 75%;
+            left: 0;
+            bottom: 0;
+        }
+
+        .card:hover .content p, .card:hover .content a{
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+         
